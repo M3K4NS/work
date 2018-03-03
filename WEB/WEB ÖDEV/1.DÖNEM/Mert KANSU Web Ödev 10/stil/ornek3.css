@@ -1,0 +1,61 @@
+#wrapper3{
+	width: 100%;
+	hyphens: 100%;
+}
+#header3{
+	width: 1500%;
+	height: 100px;
+	margin: 0px 0px 5px 0px;
+	float: left;
+}
+#logo3{
+	width: 345px;
+	height: 100px;
+	background-color: red;
+	margin: 5px 5px 5px 5px;
+	float: left;
+}
+#banner3{
+	width: 1150px;
+	height: 100px;
+	background-color: red;
+	margin: 5px 5px 5px 0px;
+	float: left;
+}
+#menu3{
+	width: 1500px;
+	height: 100px;
+	background-color: red;
+	margin: 5px 5px 5px 5px;
+	float: left;
+}
+#articel3{
+	width: 1140px;
+	height: 600px;
+	background-color: gray;
+	margin: 0px 5px 5px 5px;
+	float: left;
+}
+#sidebar3{
+	width: 350px;
+	height: 600px;
+	float: left;
+}
+#sidebaralt3{
+	width: 350px;
+	height: 195px;
+	background-color: red;
+	margin: 0px 5px 5px 0px;
+	float: left;
+}
+#sidebarust3{
+	width: 350px;
+	height: 400px;
+	background-color: red;
+	margin: 0px 5px 5px 0px;
+	float: left;
+}
+.yazı3{
+	color: white;
+	font-size: 35px;
+}

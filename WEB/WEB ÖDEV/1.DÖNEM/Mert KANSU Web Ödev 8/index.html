@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mert KANSU</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stil/css.css">
+</head>
+<body bgcolor="#33363b">
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<img src="resimler/1.png" width="140" height="140">
+		</div>
+		<div id="banner">
+			<font size="7" color="#dbdbdc">
+				TELEFONU KAPATIN!!<br>
+				HIZ YAPMAYIN!!
+			</font>
+		</div>
+	</div>
+	<div id="sidebar">
+		<table frame="void" border="1" bordercolor="#dbdbdc" cellpadding="5" cellspacing="5">
+			<tr>
+				<td align="center" class="kenar">
+					<a href="index.html">
+						<font size="4" color="#dbdbdc">
+							Anasayfa
+						</font>
+					</a>	
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="kenar">
+					<a href="tehlikeli.html">
+						<font size="4" color="#dbdbdc">
+							Tehlike Uyarı İşaretleri
+						</font>
+					</a>	
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="kenar">
+					<a href="trafik.html">
+						<font size="4" color="#dbdbdc">
+							Trafik Tanzim İşaretleri
+						</font>
+					</a>	
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="kenar">
+					<a href="bilgi.html">
+						<font size="4" color="#dbdbdc">
+							Bilgi İşaretleri
+						</font>
+					</a>	
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="kenar">
+					<a href="duraklama.html">
+						<font size="4" color="#dbdbdc">
+							Duraklama ve Park Etme İşaretleri
+						</font>
+					</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="article">
+  <img class="mySlides" src="resimler/1.cevap.png" style="width:100%">
+  <img class="mySlides" src="resimler/2.cevap.png" style="width:100%">
+  <img class="mySlides" src="resimler/3.cevap.png" style="width:100%">
+  <img class="mySlides" src="resimler/4.cevap.png" style="width:100%">
+  <img class="mySlides" src="resimler/5.cevap.png" style="width:100%">
+  <img class="mySlides" src="resimler/6.cevap.png" style="width:100%">
+  <img class="mySlides" src="resimler/7.cevap.png" style="width:100%">
+  <img class="mySlides" src="resimler/8.cevap.png" style="width:100%">
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	</div>
+	<div id="footer">
+		<marquee>
+			<font size="4">
+				MERT KANSU MENEMEN NENE HATUN M.T.A.L.
+			</font>
+		</marquee>
+	</div>
+</div>
+</body>
+</html>

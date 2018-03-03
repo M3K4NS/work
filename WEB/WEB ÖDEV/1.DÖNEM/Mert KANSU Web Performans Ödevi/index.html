@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sanal Gerceklik</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2|Orbitron" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stil/index.css">
+	<script src=“https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js”></script>
+  <script type="text/javascript">
+    window.smoothScroll = function (target) {
+    var scrollContainer = target;
+    do {
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do {
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function (c, a, b, i) {
+        i++;
+        if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function () {
+            scroll(c, a, b, i);
+        }, 20);
+    }
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+$(function(){
+var slider=0;
+$.slider=function(toplam){
+$("#slider ul#buton li").removeClass("aktif");
+$("#slider ul#resim li").hide();
+if(slider<toplam-1){
+slider++;
+$("#slider ul#buton li:eq("+slider+")").addClass("aktif");
+$("#slider ul#resim li:eq("+slider+")").fadeIn("fast");
+}else
+{
+$("#slider ul#buton li:first").addClass("aktif");
+$("#slider ul#resim li:first").fadeIn("fast");
+slider=0;
+}
+}
+var toplamli=$("#slider ul#resim li").length;
+        
+var interval= setInterval('$.slider('+toplamli+')',2000);
+$("#slider").hover(function(){
+clearInterval(interval);
+},function(){
+interval= setInterval('$.slider('+toplamli+')',2000);
+});
+$("#slider ul#buton li:first").addClass("aktif");
+$("#slider ul#resim li").hide();
+$("#slider ul#resim li:first").show();
+$("#slider ul#buton li").click(function(){
+var indis= $(this).index();
+$("#slider ul#buton li").removeClass("aktif");
+$(this).addClass("aktif");
+$("#slider ul#resim li").hide();
+$("#slider ul#resim li:eq("+indis+")").fadeIn("fast");
+slider=indis;
+return false
+}
+);
+});
+</script>
+<style>
+a { text-decoration:none}
+ul,li{padding:0;margin:0; list-style-type:none;}
+
+</style>
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" align="center">
+		<ul class="menum"> 
+			<li><a onclick="smoothScroll(document.getElementById('anasayfa'))">ANASAYFA</a></li>
+			<li><a onclick="smoothScroll(document.getElementById('hakkinda'))">HAKKINDA</a></li>
+			<li><a onclick="smoothScroll(document.getElementById('icerik'))">ICERIK</a></li>
+			<li><a onclick="smoothScroll(document.getElementById('iletisim'))">ILETISIM</a></li>
+			
+		</ul>
+	</div>
+	<div id="article">
+			<div class="kut"></div>
+			<div id="anasayfa" align="center">
+				<img src="resimler/vr.png" width="150" height="150">
+				<br>
+				SANAL GERÇEKLİK
+				<br><br>
+				<div id="yazı">
+					Sanal Gerçeklik kelimesini duyunca aklınıza ilk gelen şey ne? Kafanıza geçirilmiş beyin okuma cihazı mı? 3 Boyutlu Gözlükler mi? Yoksa The Matrix mi?… Bu çağrışımları bir çerçeve olarak hayal edersek, bu çerçevenin içindeki resim sizsiniz. Gelişen teknolojiler sayesinde, artık sanal ortamları gerçeklik hissiyatıyla deneyimlemeye başladık.
+				</div>
+			</div>
+		<br><br><br><br><br><br><br><br>
+			<div class="kut"></div>
+			<div id="hakkinda" align="center">
+				<br><br><br><br><br><br>
+				<b>Amacım ne ?</b>
+				<p>Siz sevgili site ziyaretçilerim. Bu siteyi size sanal gerçeklik nedir onu anlatmak için yapmış bulunmaktayım.</p>
+				<b>Ben Kimim ?</b>
+				<br>
+				<p>Bilişim Teknolojileri Alanı Öğrencisiyim.</p>
+			</div>
+		<br><br><br><br><br><br><br><br>
+			<div class="kut"></div>
+			<div id="icerik">
+				Sanal Gerçeklik Nedir?
+<br>
+Teknik olarak sanal gerçeklik terimi bireylerin orda olma hissini yaşadığı bilgisayar kaynaklı 3 boyutlu ortamlar için kullanılıyor. Kullanıcılar, çeşitli çevre birimleri (kasklı ekran vb.) aracılığıyla sanal ortamlara dahil oluyor. O ortama girdiği andan itibaren kullanıcının gerçeklik ile bağlantısı kopuyor ve tamamen sanal gerçekliğin yaratıldığı ortamda olma hissini yaşıyor. Kullanıcıların bu deneyimi “gerçekten” yaşayabilmesi için, sanal gerçeklik tasarımlarının kusursuz olması gerekir; aksi takdirde yaratılan zayıf “gerçeklik hissiyatı” kullanıcının bu deneyimi tam olarak yaşayamamasına sebep olur.
+<br>
+Sanal geçeklik ortamları, katılımcı üzerinde yarattığı gerçeklik hissiyatı yoğunluğuna (seviyesine) göre farklılıklar gösterir;
+<br><br>
+Kısmi Katılımlı Ortamlar:  Bir takım fiziksel unsur ve sanal imgelerin bir arada kullanılmasını gerektiren bu ortam, katılımcıya, gerçek dünya ile ilişkisini bütünüyle koparmadan bir gerçeklik hissiyatı yaşatır. Bu ortama uçuş simülatörlerini örnek gösterebiliriz. Uçuş simülatörlerinde, geniş bir ekrandan yansıtılan sanal imgeler ve pilot kabini gibi fiziksel unsurlar bulunur. Katılımcı, bu ortamda herhangi bir sanal gerçeklik cihazı (kasklı ekran ya da eldiven vb.) kullanmaya ihtiyaç duymaz.
+<br><br>
+CAVE – Tam Katılımlı Ortamlar:  CAVE, “Computer Assisted Virtual Environment / Bilgisayar Destekli Sanal Ortam” için kullanılan bir kısaltmadır. Bu ortamda, katılımcının tüm duyusal algılarına hitap edilir ve katılımcının tabiri caizse “kendinden geçmesi” hedeflenir. Farklı amaçlar için değişik kurulumlara rastlansa bile tipik bir Cave sistemi;  duvar ve zemin projeksiyonu, farklı açılardan ses/müzik yayını yapan hoparlörler ve algılayıcılardan oluşur. Kasklı ekran (Head-Mounted Display/HMD) ve dermal-dokunsal  algı cihazı (joystick, eldiven vb…) gibi çevre birimleri, katılımcının bu ortam ile bütünüyle etkileşime girmesine yardımcı olur.
+<br><br>
+Ortak (Çoklu) Katılımlı Ortamlar:  İsminden de anlaşılacağı gibi bu ortamlar, bir çok katılımcının birbirleriyle etkileşime girmesine olanak sağlayan geniş sanal evrenlerdir. Bu ortam eğitim, mimarlık, tıp, sanat, mühendislik gibi farklı disiplinlere ait insanların fikir alış-verişinde bulunmalarına olanak sağlıyor. Örneğin; kişi eğer sanal ortama bilgisayarı üzerinden katılım gerçekleştiriyorsa bu eylem ortak katılımlı ortama dahildir. (Aksi durumu da söz konusudur)
+			</div>
+		<br><br><br><br><br><br><br><br>
+			<div class="kut"></div>
+			<div id="iletisim">
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><
+				<table align="center"> 
+					<tr>
+						<td align="center">
+							<font size="7" color="white">ILETISIM</font>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<div id="kutu" align="center">
+								<a href="https://www.facebook.com/">
+									<img src="resimler/facebook.png" width="50" height="50">
+								</a>
+							</div>
+							<div id="kutu" align="center">
+								<a href="https://www.instagram.com/?hl=tr">
+									<img src="resimler/instagram.png" width="50" height="50">
+								</a>
+							</div>
+							<div id="kutu" align="center">
+								<a href="https://twitter.com/">
+									<img src="resimler/twitter.png" width="50" height="50">
+								</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	var x = prompt("Vize notunuzu giriniz.");
+	var y = prompt("Final notunuz giriniz.");
+	var sonuc = (parseInt(x)*0.4)+(parseInt(y)*0.6);
+	document.write("<font size='7'color='white'>")
+	document.write("Vize notunuzun %40 Final notunuzun %60 alınmıştır.<br> Ortalamanız .....: " + sonuc + "<br>");
+	if (50<= sonuc && sonuc <=60) 
+	{
+		document.write("Notunuz D");
+	}
+	else if(60.01<= sonuc && sonuc <=70)
+	{
+		document.write("Notunuz C");
+	}
+	else if(70.01<= sonuc && sonuc <=80)
+	{
+		document.write("Notunuz B");
+	}
+	else if(80.01<= sonuc && sonuc <=90)
+	{
+		document.write("Notunuz A");
+	}
+	else if(90.01<= sonuc && sonuc <=100) 
+	{
+		document.write("Notunuz A+");
+	}
+	else
+	{
+		document.write("Hadi seneye bir daha denersin.");
+	}
+	document.write("</font>")
+</script>
+<body bgcolor="#CD3333">
+
+</body>
+</html>

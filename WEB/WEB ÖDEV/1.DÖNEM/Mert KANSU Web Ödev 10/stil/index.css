@@ -1,0 +1,62 @@
+#wrapper{
+	width: 100%;
+	height: 100%;
+}
+#header{
+	position: fixed;
+    height: 100px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+#banner{
+	width: 100%;
+	height: 100px;
+	float: left;
+}
+#article{
+	width: 100%
+	height: 100%;
+}
+.kutu1{
+	width: 100%;
+	height: 1100px;
+	background-color: #141414;
+	position: relative;
+	margin: auto;
+	float: left;
+}
+.kutu2{
+	width: 100%;
+	height: 1100px;
+	background-color: #1a1a1a;
+	position: relative;
+	margin: auto;
+	float: left;
+}
+.kare{
+	width: 100%;
+	height: 60px;
+}
+button{
+	width: 100px;
+	height: 50px;
+	color: white;
+	font-size: 20px;
+	background-color: #242424;
+	border: 0px;
+	border-radius: 10px;
+}
+button:hover{
+	width: 140px;
+	height: 70px;
+	color: #ffff00;
+	font-size: 30px;
+	background-color: #000;
+	border: 0px;
+	border-radius: 10px;
+}
+h2{
+	color: yellow;
+	font-size: 30px;
+}

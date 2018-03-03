@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var derslistesi =new Array ("Web Tasarım ve Programlama","Veritabanı","Grafik ve Animasyon")
+	document.write(derslistesi[0])
+
+	document.write("<hr color='red' size=2 />");
+
+	var programlamadilleri=new Array();
+
+	programlamadilleri[0]="Javascript";
+	programlamadilleri[1]="Cemil";
+	programlamadilleri[2]="Sait";
+	programlamadilleri[3]="Mert";
+	programlamadilleri[4]="Bars";
+	document.write(programlamadilleri[3]);
+
+	document.write("<hr color='blue' size=2 />");
+
+	var diziupro = programlamadilleri.length;
+	document.write(diziupro);
+
+	document.write("<hr color='yellow' size=2 />");
+
+	var diziuders = derslistesi.length;
+	document.write(diziuders);
+
+	document.write("<hr color='green' size=2 />");
+
+	for(var i=0; i<programlamadilleri.length;i++)
+	{
+		document.write(programlamadilleri[i]);
+		document.write("<br>");
+	}
+
+	document.write("<hr color='black' size=2 />");
+
+	document.write(derslistesi.join());
+
+	document.write("<hr color='orange' size=2 />");
+
+	var birlesikdizi = programlamadilleri.concat(derslistesi);
+	document.write(birlesikdizi.join());
+	document.write("<br>");
+	var tersbirdizi = birlesikdizi.reverse();
+	document.write(tersbirdizi.join());
+
+	</script>
+</body>
+</html>

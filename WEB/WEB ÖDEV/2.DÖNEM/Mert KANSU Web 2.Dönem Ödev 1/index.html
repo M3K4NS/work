@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MERT KANSU</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stil/index.css">
+	<script type="text/javascript">
+    window.smoothScroll = function (target) {
+    var scrollContainer = target;
+    do {
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do {
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function (c, a, b, i) {
+        i++;
+        if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function () {
+            scroll(c, a, b, i);
+        }, 20);
+    }
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="logo">
+				<div id="logo1">
+					<script type="text/javascript">
+						var baslik = prompt("Adınızı ve Soyadınızı giriniz");
+						document.write(baslik);
+					</script>
+				</div>
+				<div id="logo2">
+					kişisel blog sayfası
+				</div>
+			</div>
+			<div id="banner">
+				<ul class="menum"> 
+					<li><a onclick="smoothScroll(document.getElementById('hakkinda'))">HAKKINDA</a></li>
+					<li><a onclick="smoothScroll(document.getElementById('icerik'))">ICERIK</a></li>
+					<li><a onclick="smoothScroll(document.getElementById('iletisim'))">ILETISIM</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div id="article" align="center">
+
+			<div class="header1"></div>
+			<div id="hakkinda">
+				<script type="text/javascript">
+					var hakkinda = prompt("Hakkında kısmını doldurunuz");
+					document.write(hakkinda);
+				</script>
+			</div>
+
+			<div class="header1"></div>
+			<div id="icerik">
+				
+				<h2>Sanal Gerçeklik Nedir?</h2>
+<br>
+Teknik olarak sanal gerçeklik terimi bireylerin orda olma hissini yaşadığı bilgisayar kaynaklı 3 boyutlu ortamlar için kullanılıyor. Kullanıcılar, çeşitli çevre birimleri (kasklı ekran vb.) aracılığıyla sanal ortamlara dahil oluyor. O ortama girdiği andan itibaren kullanıcının gerçeklik ile bağlantısı kopuyor ve tamamen sanal gerçekliğin yaratıldığı ortamda olma hissini yaşıyor. Kullanıcıların bu deneyimi “gerçekten” yaşayabilmesi için, sanal gerçeklik tasarımlarının kusursuz olması gerekir; aksi takdirde yaratılan zayıf “gerçeklik hissiyatı” kullanıcının bu deneyimi tam olarak yaşayamamasına sebep olur.
+<br>
+Sanal geçeklik ortamları, katılımcı üzerinde yarattığı gerçeklik hissiyatı yoğunluğuna (seviyesine) göre farklılıklar gösterir;
+<br><br>
+Kısmi Katılımlı Ortamlar:  Bir takım fiziksel unsur ve sanal imgelerin bir arada kullanılmasını gerektiren bu ortam, katılımcıya, gerçek dünya ile ilişkisini bütünüyle koparmadan bir gerçeklik hissiyatı yaşatır. Bu ortama uçuş simülatörlerini örnek gösterebiliriz. Uçuş simülatörlerinde, geniş bir ekrandan yansıtılan sanal imgeler ve pilot kabini gibi fiziksel unsurlar bulunur. Katılımcı, bu ortamda herhangi bir sanal gerçeklik cihazı (kasklı ekran ya da eldiven vb.) kullanmaya ihtiyaç duymaz.
+<br><br>
+CAVE – Tam Katılımlı Ortamlar:  CAVE, “Computer Assisted Virtual Environment / Bilgisayar Destekli Sanal Ortam” için kullanılan bir kısaltmadır. Bu ortamda, katılımcının tüm duyusal algılarına hitap edilir ve katılımcının tabiri caizse “kendinden geçmesi” hedeflenir. Farklı amaçlar için değişik kurulumlara rastlansa bile tipik bir Cave sistemi;  duvar ve zemin projeksiyonu, farklı açılardan ses/müzik yayını yapan hoparlörler ve algılayıcılardan oluşur. Kasklı ekran (Head-Mounted Display/HMD) ve dermal-dokunsal  algı cihazı (joystick, eldiven vb…) gibi çevre birimleri, katılımcının bu ortam ile bütünüyle etkileşime girmesine yardımcı olur.
+<br><br>
+Ortak (Çoklu) Katılımlı Ortamlar:  İsminden de anlaşılacağı gibi bu ortamlar, bir çok katılımcının birbirleriyle etkileşime girmesine olanak sağlayan geniş sanal evrenlerdir. Bu ortam eğitim, mimarlık, tıp, sanat, mühendislik gibi farklı disiplinlere ait insanların fikir alış-verişinde bulunmalarına olanak sağlıyor. Örneğin; kişi eğer sanal ortama bilgisayarı üzerinden katılım gerçekleştiriyorsa bu eylem ortak katılımlı ortama dahildir. (Aksi durumu da söz konusudur)
+			</div>
+
+			<div class="header1"></div>
+			<div id="iletisim">
+				<script type="text/javascript">
+					var mail = prompt("Mail adresiniz giriniz");
+					var tel = prompt("Telefon numaranızı giriniz");
+					var adres = prompt("Adresiniz giriniz");
+
+					document.write("<table><tr><td>");
+					document.write("Adı ve Soyadı :");
+					document.write("</td><td>");
+					document.write(baslik);
+					document.write("</td></tr>");
+
+					document.write("<tr><td>");
+					document.write("Mail adresi :");
+					document.write("</td><td>");
+					document.write(mail);
+					document.write("</td></tr>");
+
+					document.write("<tr><td>");
+					document.write("Telefon no :");
+					document.write("</td><td>");
+					document.write(tel);
+					document.write("</td></tr>");
+
+					document.write("<tr><td>");
+					document.write("Adres :");
+					document.write("</td><td>");
+					document.write(adres);
+					document.write("</td></tr></table>");
+				</script>
+			</div>
+
+		</div>
+		<div id="footer" align="center">
+			<script type="text/javascript">
+				document.write("© " + baslik);
+			</script>
+		</div>
+	</div>
+
+</body> 	
+</html>

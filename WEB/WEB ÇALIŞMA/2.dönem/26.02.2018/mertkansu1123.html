@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MERT KANSU</title>
+	<meta charset="utf-8">
+</head>
+<script type="text/javascript">
+	function main()
+	{
+		
+		function function1(sayac1)
+		{ 
+			document.write("<font size='4' color='blue'>");
+			document.write("görüyorsunuz" + sayac1 + "anlatmaya gerek yok...");
+			function2(sayac1);
+			document.write("</font>");
+		}
+		function function2(sayac2)
+		{
+			document.write("<font size='4' color='blue'>");
+			document.write("görüyorsunuz" + sayac2 + "anlatmaya gerek yok...");
+			sayac2++;
+			function1(sayac2);
+			document.write("</font>");
+		}
+		
+		function1(1);
+
+	}
+	</script>
+<body>
+<form>
+	<input type="button" name="" value="tıkla" onclick="main()">
+</form>
+</body>
+</html>

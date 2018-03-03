@@ -1,0 +1,86 @@
+#wrapper6{
+	width: 1000px;
+	height: 600px;
+	background-image: url(sky.png);
+	padding: 100px;
+	position: relative;
+    margin: auto;
+}
+#devkutu6{
+	width: 900px;
+	height: 600px;
+	position: relative;
+    margin: auto;
+}
+#bkutu6{
+	width: 600px;
+	height: 450px;
+	color: #50c0e9;
+	background-color: #fff;
+	float: left;
+}
+#kkutu6-1{
+	width: 150px;
+	height: 150px;
+	background-color: #50c0e9;
+	float: left;
+}
+#kkutu6-2{
+	width: 150px;
+	height: 150px;
+	background-color: #a8d324;
+	float: left;
+}
+#kkutu6-3{
+	width: 150px;
+	height: 150px;
+	background-color: #7caf00;
+	float: left;
+}
+#kkutu6-4{
+	width: 150px;
+	height: 150px;
+	background-color: #3b5999;
+	float: left;
+}
+#kkutu6-5{
+	width: 150px;
+	height: 150px;
+	background-color: #00baff;
+	float: left;
+}
+#kkutu6-6{
+	width: 150px;
+	height: 150px;
+	background-color: #ea4c89;
+	float: left;
+}
+#kkutu6-7{
+	width: 150px;
+	height: 150px;
+	background-color: #406e94;
+	float: left;
+}
+#kkutu6-8{
+	width: 150px;
+	height: 150px;
+	background-color: #cb2028;
+	float: left;
+}
+#kkutu6-9{
+	width: 150px;
+	height: 150px;
+	background-color: #592276;
+	float: left;
+}
+#birkutu6{
+	width: 300px;
+	height: 450px;
+	float: left;
+}
+#ukutu6{
+	width: 450px;
+	height: 150px;
+	background-color: #16a5d7;
+	float: left;
+}

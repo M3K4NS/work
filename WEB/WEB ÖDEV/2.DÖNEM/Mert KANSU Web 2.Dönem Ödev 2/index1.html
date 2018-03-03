@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MERT KANSU</title>
+	<meta charset="utf-8">
+</head>
+<script type="text/javascript">
+	function toplama(x,y)
+	{
+		var toplama = parseInt(x) + parseInt(y);
+		return toplama;
+	};
+	function cikarma(x,y)
+	{
+		var cikarma = parseInt(x) - parseInt(y);
+		return cikarma;
+	};
+	function bolme(x,y)
+	{
+		var bolme = parseInt(x) / parseInt(y);
+		return bolme;
+	};
+	function carpma(x,y)
+	{
+		var carpma = parseInt(x) * parseInt(y);
+		return carpma;
+	};
+	document.write("<h1><center>");
+	var x = prompt("Bir sayı giriniz.");
+	var y = prompt("Bir sayı daha giriniz.");
+	var secim = prompt("hangi işlem yapılsın(+, -, *, /)");
+	document.write("<table border='1' cellspacing='20' cellpadding='20' frame='void' valign='middle'><tr><td bgcolor='#EE3B3B'>");
+	document.write(x);
+	document.write("</td><td bgcolor='#EE3B3B'>");
+	document.write(secim);
+	document.write("</td><td bgcolor='#EE3B3B'>");
+	document.write(y);
+	document.write("</td><td bgcolor='#EE3B3B'>");
+	document.write("=");
+	document.write("</td><td bgcolor='#EE3B3B'>");
+	if(secim=="+")
+	{
+		document.write(toplama(x,y));
+	}
+	else if(secim=="-")
+	{
+		document.write(cikarma(x,y));
+	}
+	else if(secim=="/")
+	{
+		document.write(bolme(x,y));
+	}
+	else if(secim=="*")
+	{
+		document.write(carpma(x,y));
+	}
+	else
+	{
+		document.write("Öyle bir işlem yok.");
+	}
+	document.write("</td></tr></table>");
+	document.write("</center></h1>");
+</script>
+<body bgcolor="#CD3333">
+
+</body>
+</html>

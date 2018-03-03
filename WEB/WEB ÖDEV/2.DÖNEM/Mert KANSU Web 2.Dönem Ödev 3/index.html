@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mert KANSU</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		input{
+			width: 150px;
+			height: 70px;
+			background-color: black;
+			color: yellow;
+			font-size: 25px;
+			border-radius: 20px;
+		}
+	</style>
+</head>
+<script type="text/javascript">
+	function toplama()
+	{
+		var x = prompt("1. sayıyı giriniz.");
+		var y = prompt("2. sayıyı giriniz.");
+		var top = parseInt(x) + parseInt(y);
+		alert(top);
+	}
+	function cikarma()
+	{
+		var x = prompt("1. sayıyı giriniz.");
+		var y = prompt("2. sayıyı giriniz.");
+		var cik = parseInt(x) - parseInt(y);
+		alert(cik);
+	}
+	function bolme()
+	{
+		var x = prompt("1. sayıyı giriniz.");
+		var y = prompt("2. sayıyı giriniz.");
+		var bol = parseInt(x) / parseInt(y);
+		alert(bol);
+	}
+	function carpma()
+	{
+		var x = prompt("1. sayıyı giriniz.");
+		var y = prompt("2. sayıyı giriniz.");
+		var carp = parseInt(x) * parseInt(y);
+		alert(carp);
+	}
+</script>
+<body bgcolor="#CD3333">
+<form>
+	<input type="button" name="1" value="TOPLAMA" onclick="toplama()">
+	<input type="button" name="2" value="ÇİKARMA" onclick="cikarma()">
+	<input type="button" name="3" value="BÖLME" onclick="bolme()">
+	<input type="button" name="4" value="ÇARPMA" onclick="carpma()">
+</form>
+</body>
+</html>

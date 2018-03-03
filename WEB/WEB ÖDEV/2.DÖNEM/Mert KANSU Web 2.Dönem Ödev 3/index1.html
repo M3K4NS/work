@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mert KANSU</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		input{
+			width: auto;
+			height: 70px;
+			background-color: #EE3B3B;
+			color: white;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<script type="text/javascript">
+	
+	function ders1()
+	{
+		var perfor=0;
+		var x = prompt("Ortalamasını almak istediğiniz dersin no'sunu seçiniz.");
+		var sınav1 = prompt(dersler[x] + " 1. sınav notunuzu giriniz.");
+		var sınav2 = prompt(dersler[x] + " 2. sınav notunuzu giriniz.");
+		var b = prompt(dersler[x] + " dersinden kaç tane performans notunuz var.");
+		
+		for(var j=0; j<b ; j++) 
+		{
+			var y=prompt(dersler[x] + " " + (j+1) + ". performans notunuzu giriniz.");
+			perfor = parseInt(perfor) + parseInt(y);
+		}
+		var a=parseInt(b)+2;
+		var sonuc = (parseInt(sınav1)+parseInt(sınav2)+parseInt(perfor))/parseInt(a);
+		if (sonuc<=50) 
+		{
+			alert(dersler[x] + " dersinin ortalaması ....: " + sonuc + " dersten kaldınız.");
+		}
+		else
+		{
+			alert(dersler[x] + " dersinin ortalaması ....: " + sonuc + " dersten geçtiniz.");
+		}
+	}
+</script>
+<body bgcolor="#CD3333">	
+	<script type="text/javascript">
+		var dersler =new Array();
+		dersler[0] = "Matematik";
+		dersler[1] = "Web Tasarım ve Programlama";
+		dersler[2] = "Grafik ve Animasyon";
+		dersler[3] = "Veritabanı Ve Organizasyonu";
+		dersler[4] = "Yabancı Dil";
+		dersler[5] = "Coğrafya";
+		dersler[6] = "Biyoloji";
+		dersler[7] = "Kimya";
+		dersler[8] = "Fizik";
+		dersler[9] = "Dil ve Anlatım";
+		for(var i=0; i<dersler.length; i++)
+		{
+			document.write("<font size='5'color='white'>" + dersler[i] + " ders no  ............:  " + i + "</font><br>");
+		}
+	</script>
+	<br><br>
+<form>
+	<input type="button" name="" value="ORTALAMA HESAPLAMA" onclick="ders1()">
+</form>
+</body>
+</html>

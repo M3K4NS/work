@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+	<title>Mert KANSU</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stil/index.css">
+	<script type="text/javascript" src="prefixfree.min.js"></script>
+	<script src=“https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js”></script>
+	<script type="text/javascript">
+	    window.smoothScroll = function (target) {
+	    var scrollContainer = target;
+	    do {
+	        scrollContainer = scrollContainer.parentNode;
+	        if (!scrollContainer) return;
+	        scrollContainer.scrollTop += 1;
+	    } while (scrollContainer.scrollTop == 0);
+
+	    var targetY = 0;
+	    do {
+	        if (target == scrollContainer) break;
+	        targetY += target.offsetTop;
+	    } while (target = target.offsetParent);
+
+	    scroll = function (c, a, b, i) {
+	        i++;
+	        if (i > 30) return;
+	        c.scrollTop = a + (b - a) / 30 * i;
+	        setTimeout(function () {
+	            scroll(c, a, b, i);
+	        }, 20);
+	    }
+	    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+	}
+	</script>
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" align="center">
+		<ul class="menum"> 
+			<li><a onclick="smoothScroll(document.getElementById('saray'))">SARAYLAR</a></li>
+			<li><a onclick="smoothScroll(document.getElementById('cizgi'))">ÇİZGİ FİLMLER</a></li>
+		</ul>
+	</div>
+	<div id="article">
+		
+	<div id="saray"></div>
+	<div id="saraylar">
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'Versailles')" id="defaultOpen">Fransa: Versailles Sarayı</button>
+		  <button class="tablinks" onclick="openCity(event, 'Peterhof')">Rusya: Peterhof Sarayı</button>
+		  <button class="tablinks" onclick="openCity(event, 'Topkapi')">Türkiye: Topkapı Sarayı</button>
+		  <button class="tablinks" onclick="openCity(event, 'Windsor')">İngiltere: Windsor Şatosu</button>
+		  <button class="tablinks" onclick="openCity(event, 'Schonnbrunn')">Avusturya: Schönnbrunn Sarayı</button>
+		  <button class="tablinks" onclick="openCity(event, 'ElEscorial')">İspanya: El Escorial</button>
+		  <button class="tablinks" onclick="openCity(event, 'Frauenberg')">Çek Cumhuriyeti: Frauenberg Sarayı</button>
+		  <button class="tablinks" onclick="openCity(event, 'Neuschwanstein')">Almanya: Neuschwanstein Şatosu</button>
+		  <button class="tablinks" onclick="openCity(event, 'Doge')">İtalya: Doge Sarayı</button>
+		  <button class="tablinks" onclick="openCity(event, 'Pena')">Portekiz: Pena Sarayı</button>
+		</div>
+
+		<div id="Versailles" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/1.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify">
+			        	<h2>Fransa: Versailles Sarayı</h2>
+			        	<br>
+						Paris yakınlarındaki Versailles Sarayı, bin 800 odası ile Avrupa’nın en büyük sarayları arasında yer alıyor. 
+						<br><br>
+						Sarayın yapımına 1677 yılında XIV. Ludwig döneminde başlanmıştı. Avrupa’daki birçok hükümdar, kendi saraylarının yapımında Versailles Sarayı’nı örnek aldı.
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+		<div id="Peterhof" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/2.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify">
+			        	<h2>Rusya: Peterhof Sarayı</h2>
+			        	<br>
+						Rusya’nın Versailles’ı olarak kabul edilen Petershof Sarayı, St. Petersburg’un batısında yer alıyor. 1723 yılında açılan Finlandiya Körfezi‘nin güney kıyısındaki saray, Çar I. Peter tarafından yazlık rezidans olarak kullanılmıştı.
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+		<div id="Topkapi" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/3.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify"> 	
+						<h2>Türkiye: Topkapı Sarayı</h2>
+						<br>
+						Topkapı Sarayı 15. yüzyılın ortalarından itibaren çok sayıda Osmanlı padişahına ev sahipliği yaptı. Fatih Sultan Mehmed’in 1453 yılında İstanbul’u fethetmesinden sonra 1460 yıllarında yapımına başlanan ve 1478 yılında tamamlanan Saray 700 bin metrakarelik bir alan üzerine kurulu. Dört avluya açılan sarayda yaklaşık 5 bin kişi hem yaşıyor hem de çalışıyordu.
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+		<div id="Windsor" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/4.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify">
+			        	<h2>İngiltere: Windsor Şatosu</h2>
+			        	<br>
+						Britanya monarşisinin resmi ana rezidanslarından biri olan Windsor, dünyanın aralıksız yaşanılan en eski şatosu. 1078 yılında yapımına başlanan Saray, garnizon ve hapishane olarak da kullanıldı. Saray, İngiltere Kraliçesi tarafından hala kullanılıyor.
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+		<div id="Schonnbrunn" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/5.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify">
+			        	<h2>Avusturya: Schönnbrunn Sarayı</h2>
+			        	<br>
+						Kraliçe Maria Theresia, Viyana’daki Schönnbrunn Sarayı’nı yaklaşık 300 yıl önce Avrupa’daki avlu yaşamının merkezi haline getirdi. 
+						<br><br>
+						Avusturya-Macaristan İmparatorluğu’nun görkemli yapılarından olan bu saray, günümüzde de yılda ortalama 3 milyon turist tarafından ziyaret ediliyor.
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+		<div id="ElEscorial" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/6.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify">
+			        	<h2>İspanya: El Escorial</h2>
+			        	<br>
+						Madrid yakınlarında saray, manastır ve kütüphaneden oluşan bu yapı kompleksi için İspanyollar ‘dünyanın sekizinci harikası’ diyor. 207 metre uzunluğunda ve 161 metre genişliğindeki yapı, dünyanın en büyük Rönesans dönemi eseri. Çoğu İspanyol kralının anıt mezarı da burada bulunuyor.
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+		<div id="Frauenberg" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/7.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify">
+			        	<h2>Çek Cumhuriyeti: Frauenberg Sarayı</h2>
+			        	<br>
+						Eski Bohemya derebeylerinin ikametgahlarından olan saray, Çek Cumhuriyeti’nin en sevilen yapılarından biri. Turistlere sergilemekten gurur duyulan en önemli eserler ise 17’nci yüzyıldan kalma duvar kağıtları.
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+		<div id="Neuschwanstein" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/8.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify">
+			        	<h2>Almanya: Neuschwanstein Şatosu</h2>
+			        	<br>
+						Bavyera Kralı II. Ludwig tarafından yaptırılan şato, 1886 yılında açıldı. Her ne kadar II. Ludwig sarayın açılışını görememiş olsa da Masal Sarayı olarak da adlandırılan bu yapı Almanya’nın Thüringen eyaletinde ziyaretçileri 
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+		<div id="Doge" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/9.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify">
+			        	<h2>İtalya: Doge Sarayı</h2>
+			        	<br>
+						Doge Sarayı, tarihi Venedik Cumhuriyeti’nin politik kurumlarına ev sahipliği yaptı. Görkemli yapı, İtalya’nın deniz ve ticaret gücünün bir sembolü niteliğindeydi. Gotik tarzda yapılmış 
+						saray birçok yangında zarar gördü fakat arka arkaya yeniden inşa edildi. Saray, şu anda müze olarak kullanılıyor.
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+		<div id="Pena" class="tabcontent">
+		  	<div class="flipper">
+    			<div class="flip-content">
+	        		<!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/10.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back" align="justify">
+			        	<h2> Portekiz: Pena Sarayı</h2>
+			        	<br>
+						Sanat tarihçileri, bu yapıda birçok stilin kiç bir biçimde birbirine karıştığı görüşünde. Bazıları, sarayın Disneyland’ı andırdığını düşünüyor. Fakat turistler, Sintra kentindeki saraya çok ilgi gösteriyor. Saray, 14’üncü yüzyıldan itibaren Portekiz krallarının yazlık rezidansı olarak kullanıldı.
+			        </div>
+    			</div>
+			</div>
+		</div>
+
+
+		<script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+		</script>	
+	</div>	
+	<div id="cizgi"></div>
+	<div id="kutu1">
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'redkit')" id="defaultOpen">redkit</button>
+		  <button class="tablinks" onclick="openCity(event, 'woody')">ağaçkakan woody</button>
+		  <button class="tablinks" onclick="openCity(event, 'panter')">pembe panter</button>
+		  <button class="tablinks" onclick="openCity(event, 'scooby')">scooby doo</button>
+		  <button class="tablinks" onclick="openCity(event, 'jetgiller')">jetgiller</button>
+		  <button class="tablinks" onclick="openCity(event, 'devri')">taş devri</button>
+		  <button class="tablinks" onclick="openCity(event, 'mask')">mask</button>
+		  <button class="tablinks" onclick="openCity(event, 'bugs')">bugs bunny</button>
+		</div>
+
+		<div id="redkit" class="tabcontent">
+		  <div class="flipper">
+			    <div class="flip-content">
+			        <!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/11.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back">
+			        	redkit
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div id="woody" class="tabcontent">
+		  <div class="flipper">
+			    <div class="flip-content">
+			        <!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/12.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back">
+			        	ağaçkakan woody
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div id="panter" class="tabcontent">
+		  <div class="flipper">
+			    <div class="flip-content">
+			        <!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/13.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back">
+			        	pembe panter
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div id="scooby" class="tabcontent">
+		  <div class="flipper">
+			    <div class="flip-content">
+			        <!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/14.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back">
+			        	scooby doo
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div id="jetgiller" class="tabcontent">
+		  <div class="flipper">
+			    <div class="flip-content">
+			        <!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/15.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back">
+			        	jetgiller
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div id="devri" class="tabcontent">
+		  <div class="flipper">
+			    <div class="flip-content">
+			        <!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/16.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back">
+			        	taş devri
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div id="mask" class="tabcontent">
+		  <div class="flipper">
+			    <div class="flip-content">
+			        <!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/17.gif" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back">
+			        	mask 
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div id="bugs" class="tabcontent">
+		  <div class="flipper">
+			    <div class="flip-content">
+			        <!-- ön yüzü -->
+			        <div class="front">
+			        	<img src="resimler/18.jpg" alt="" width="1050" height="600" />
+			        </div>
+			        <!-- arka yüzü -->
+			        <div class="back">
+			        	bugs bunny
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		
+
+		<script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+		</script>
+	</div>
+	</div>
+</div>
+</body>
+</html>

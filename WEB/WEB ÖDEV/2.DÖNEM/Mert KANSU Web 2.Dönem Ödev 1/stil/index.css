@@ -1,0 +1,122 @@
+body{
+	background-image: url(4.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+.menum{
+	list-style-type: none;
+	margin: 0;
+	padding: 35px 0px 0px 0px;
+	font-family: 'Kavivanar', cursive;
+}
+.menum li{
+	display: inline;
+}
+.menum a{
+	text-decoration: none;
+	padding: 3px 20px;
+	font-size: 35px;
+	color: #fff;
+}
+.menum a:hover{
+	color:#C0C0C0;
+}
+#wrapper{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+#header{
+	width: 100%;
+	height: 120px;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	float: left;
+	background-image: url(4.jpg);
+	background-size: 100%;
+}
+.header1{
+	width: 100%;
+	height: 120px;
+	z-index: 0;
+	float: left;
+}
+#logo{
+	width: 35%;
+	height: 120px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Kavivanar', cursive;
+	font-size: 35px;
+	float: left;
+}
+#logo1{
+	width: 100%;
+	height: 60px;
+	float: left;
+}
+#logo2{
+	width: 100%;
+	height: 60px;
+	float: left;
+}
+#banner{
+	width: 65%;
+	height: 130px;
+	float: left;
+}
+#article{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+#footer{
+	width: 90%;
+	height: 60px;
+	padding: 30px;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: white;
+	float: left;
+}
+#icerik{
+	width: 80%;
+	padding: 60px;
+	margin-left: 90px;
+	border-radius: 100px;
+	font-size: 25px;
+	text-align: justify;
+	color: white;
+	background-color: rgba(79, 79, 79, 0.2);
+	float: left;
+}
+#hakkinda{
+	width: 80%;
+	padding: 60px;
+	margin-left: 90px;
+	border-radius: 100px;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	background-color: rgba(79, 79, 79, 0.2);
+	float: left;
+}
+#iletisim{
+	width: 80%;
+	padding: 60px;
+	margin-left: 90px;
+	border-radius: 100px;
+	font-size: 25px;
+	text-align: justify;
+	text-transform: uppercase;
+	color: white;
+	background-color: rgba(79, 79, 79, 0.2);
+	float: left;
+}

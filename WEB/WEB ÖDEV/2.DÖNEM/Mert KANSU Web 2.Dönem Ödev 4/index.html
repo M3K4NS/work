@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MERT KANSU</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stil/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body bgcolor="#1874cd">
+
+<div id="wrapper">
+	<div id="header">
+		
+		<div id="kutu1" align="center">
+			<img src="resim/github1.png" width="200" height="200" onclick="window.location.href='https://github.com/M3K4NS'">
+		</div>
+		<div id="kutu2" align="center">
+			<br>MERT KANSU
+		</div>
+
+	</div>
+
+
+	<div id="article">
+		
+		<div class="kutu3" align="center">
+			<br><br>Matematik Fonksiyonu
+		</div>
+		<div class="kutu1" align="center">
+			Alta yuvarlana sayı<br><br>
+			<script type="text/javascript">
+				var a = prompt("Alta yuvarlanan sayıyı giriniz.");
+				var b = Math.floor(a);
+				document.write("Girilen sayı : " + a + "<br> Sonuç :" + b);
+			</script>
+		</div>
+		<div class="kutu1" align="center">
+			Üste yuvarlana sayı<br><br>
+			<script type="text/javascript">
+				var c = prompt("Üste yuvarlanan sayıyı giriniz.");
+				var d = Math.round(c);
+				document.write("Girilen sayı : " + c + "<br> Sonuç :" + d);
+			</script>
+		</div>
+		<div class="kutu1" align="center">
+			Karekökü alınan sayı<br><br>
+			<script type="text/javascript">
+				var e = prompt("Karekökü alınmasını istediğiniz sayıyı giriniz.");
+				var f = Math.sqrt(e);
+				document.write("Girilen sayı : " + e + "<br> Sonuç :" + f);
+			</script>
+		</div>
+		<div class="kutu1" align="center">
+			Pi sayısı<br><br>
+			<script type="text/javascript">
+				var pi = Math.PI;
+				document.write(pi);
+			</script>
+		</div>
+		<div class="kutu1" align="center">
+			Random sayı<br><br>
+			<script type="text/javascript">
+				var rast = Math.random();
+				document.write(rast);
+			</script>
+		</div>
+
+		<div class="kutu3" align="center">
+			<br><br>Date Fonksiyonu
+		</div>
+		<div class="kutu2" align="center">
+			<script type="text/javascript">
+				var zaman = new Date();
+				document.write(zaman);
+			</script>
+		</div>
+		<div class="kutu2" align="center">
+			<script type="text/javascript">
+				var zaman = new Date();
+				var yıl = zaman.getYear();
+				document.write(yıl);
+			</script>
+		</div>
+		<div class="kutu2" align="center">
+			<script type="text/javascript">
+				var zaman = new Date();
+				var saat = zaman.getHours();
+				document.write(saat + ".");
+				var dakika = zaman.getMinutes();
+				document.write(dakika + ".");
+				var saniye = zaman.getSeconds();
+				document.write(saniye);
+
+			</script>
+		</div>
+
+		<div class="kutu4" align="center">
+			<br><br><br><br><img src="resim/black.jpg" onmouseover="alert('Iam black hat')">
+		</div>
+		<div class="kutu4" align="center">
+			<br><br><br><br><img src="resim/gray.jpg" onmouseout="alert('Iam gray hat')">
+		</div>
+		<div class="kutu4" align="center">
+			<br><br><br><br><img src="resim/white.jpg" onclick="alert('Iam white hat')">
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
